@@ -1,0 +1,305 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Use Google Font Roboto for better readability */
+}
+
+/* Header CSS */
+header {
+  background-color: #5E63BA; /* Change to a more modern color */
+  color: #fff; /* White text for better contrast */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block; /* Change to inline-block for better alignment */
+  margin: 0 15px; /* Increase margin for better spacing */
+}
+
+nav ul li a {
+  color: #fff; /* White text for links */
+  text-decoration: none;
+  padding: 10px 15px; /* Add padding for better clickability */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}
+
+
+/* Container CSS */
+.container {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+}
+
+/* Game Container CSS */
+.game-container {
+  width: 80%; /* Update width to be responsive */
+  max-width: 500px; /* Limit maximum width for better readability */
+  margin: 0 auto;
+  border-radius: 10px; /* Increase border radius for smoother edges */
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Add more padding for better spacing */
+}
+
+.game-container .content {
+  margin-bottom: 20px; /* Adjust spacing */
+}
+
+.game-container .word {
+  user-select: none;
+  font-size: 2.5rem; /* Increase font size for better visibility */
+  font-weight: bold; /* Make word bold */
+  text-align: center;
+  letter-spacing: 5px; /* Decrease letter spacing for better readability */
+}
+
+.game-container .details p {
+  font-size: 1.2rem; /* Increase font size for better readability */
+  margin-bottom: 10px;
+}
+
+.game-container input {
+  width: 100%;
+  height: 50px; /* Decrease input height for better appearance */
+  outline: none;
+  padding: 0 15px; /* Add padding for better input field appearance */
+  font-size: 1rem; /* Decrease font size for better appearance */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease; /* Add transition for smoother appearance */
+}
+
+.game-container input:focus {
+  border-color: #5E63BA; /* Change border color on focus */
+}
+
+.game-container input::placeholder {
+  color: #aaa;
+}
+
+.game-container input:focus::placeholder {
+  color: #ccc; /* Change placeholder color on focus */
+}
+
+.game-container .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.game-container .buttons button {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 1rem; /* Decrease font size for better appearance */
+  border-radius: 5px;
+  width: 48%; /* Adjust button width for better spacing */
+  transition: all 0.3s ease;
+}
+
+.game-container .buttons button:active {
+  transform: scale(0.97);
+}
+
+.game-container .buttons .refresh-word {
+  background: #6C757D;
+}
+
+.game-container .buttons .refresh-word:hover {
+  background: #5f666d;
+}
+
+.game-container .buttons .check-word {
+  background: #5372F0;
+}
+
+.game-container .buttons .check-word:hover {
+  background: #2c52ed;
+}
+
+/* Footer CSS */
+footer {
+  background-color: #5E63BA; /* Update footer background color */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.privacy-info {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+/* Dark Mode */
+[data-theme='dark'] {
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+[data-theme='dark'] header {
+  background-color: #333;
+  color: #fff; /* Update text color for better readability */
+}
+
+[data-theme='dark'] nav ul li a {
+  color: #f5f5f5;
+}
+
+/* Update other sections for dark mode */
+[data-theme='dark'] .section, 
+[data-theme='dark'] .importance-section, 
+[data-theme='dark'] .creative-approach-section, 
+[data-theme='dark'] .games-section, 
+[data-theme='dark'] .chatbot-section {
+  background-color: #222; /* Update section background color */
+  color: #f5f5f5; /* Update section text color */
+}
+
+[data-theme='dark'] .section h2, 
+[data-theme='dark'] .importance-section h2, 
+[data-theme='dark'] .creative-approach-section h2, 
+[data-theme='dark'] .games-section h2, 
+[data-theme='dark'] .chatbot-section h2 {
+  color: #fff; /* Update section title color */
+}
+
+[data-theme='dark'] .game-button, 
+[data-theme='dark'] .chatbot-section .button {
+  background-color: #333; /* Update button background color */
+  color: #fff; /* Update button text color */
+}
+
+[data-theme='dark'] .game-button:hover, 
+[data-theme='dark'] .chatbot-section .button:hover {
+  background-color: #555; /* Update button hover background color */
+}
+
+/* Update footer for dark mode */
+[data-theme='dark'] footer {
+  background-color: #333;
+  color: #fff;
+}
+/* Theme toggle container */
+.theme-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+/* Theme toggle label */
+.theme-toggle {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* For light mode */
+.game-container .word,
+.game-container .details p,
+.game-container input,
+.game-container input::placeholder,
+.game-container input:focus::placeholder {
+    color: black; /* Set text color to black */
+}
+
+/* For dark mode */
+[data-theme='dark'] .game-container .word,
+[data-theme='dark'] .game-container .details p,
+[data-theme='dark'] .game-container input,
+[data-theme='dark'] .game-container input::placeholder,
+[data-theme='dark'] .game-container input:focus::placeholder {
+    color: black; /* Set text color to black */
+}
+
+
+/* Theme toggle container */
+.theme-toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+/* Theme toggle label */
+.theme-toggle {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #8b8b8b;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Slider */
+.theme-toggle::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #adadad;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Slide to right when label is clicked */
+.theme-toggle-container input[type="checkbox"]:checked + .theme-toggle::after {
+  transform: translateX(20px);
+}
+
+

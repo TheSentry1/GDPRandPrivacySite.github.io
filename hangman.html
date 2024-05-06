@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="stylehangman.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Navigation Links -->
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Chatbot</a></li>
+                    <li><a href="hangman.html">Hangman Game</a></li>
+                    <li><a href="home.html">Homepage</a></li>
+                    <li><a href="index scrabble.html">Scrabble Game</a></li>
+                </ul>
+                <div class="theme-toggle-container">
+                    <label for="theme-toggle" class="theme-toggle"></label>
+                </div>  
+            </div>
+        </nav>
+    </header>
+
+    <div class="privacy-info-container">
+        <div class="container">
+            <h2>Learn About GDPR and Privacy While Playing Hangman</h2>
+            <p>Privacy laws like GDPR are essential for protecting personal data. Even games like Hangman can be used to raise awareness about privacy. While you enjoy guessing words, consider how important it is to protect your personal information online.</p>
+            <p>Hangman teaches us patience and persistence. Similarly, understanding privacy laws and protecting our data require patience and attention to detail. Every correct guess in the game is like understanding another aspect of privacy.</p>
+            <p>So, enjoy and and explore how it can be not only fun but also educational when it comes to understanding GDPR and privacy!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="refresh-word">Refresh Word</button>
+        <div class="hangman-box">
+            <div class="hangman-figure">
+                <div class="head"></div>
+                <div class="body"></div>
+                <div class="left-arm"></div>
+                <div class="right-arm"></div>
+                <div class="left-leg"></div>
+                <div class="right-leg"></div>
+            </div>
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">Hint: <b></b></h4>
+            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+
+    <div class="game-modal">
+        <div class="content">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Richard Jameson 20027956</p>
+        </div>
+    </footer>
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="accessibility.js"></script>
+    <!-- Include JavaScript file -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+

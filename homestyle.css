@@ -1,0 +1,334 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header CSS */
+header {
+    background-color: #5E63BA; /* Change to a more modern color */
+    color: #fff; /* White text for better contrast */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Change to inline-block for better alignment */
+    margin: 0 15px; /* Increase margin for better spacing */
+}
+
+nav ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    padding: 10px 15px; /* Add padding for better clickability */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}
+
+
+.hero {
+    background-color: #f0f0f0;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5E63BA;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #8286c9;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db; /* Default button color */
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9; /* Button color on hover */
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #8286c9;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    animation: slide-up 0.5s ease-out; /* Animation for footer */
+}
+
+/* Additional Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gdpr-info, .privacy-info, .our-games, .need-help {
+    background-color: #fff;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: slide-up 0.5s ease-out;
+}
+
+.gdpr-info h2, .privacy-info h2, .our-games h2, .need-help h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.gdpr-info p, .privacy-info p, .our-games p, .need-help p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.our-games h3, .privacy-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.our-games p, .privacy-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.need-help ul {
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.need-help li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b8b7b7;
+    margin-bottom: 10px;
+}
+
+/* Animation */
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling for .wrapper.four */
+.wrapper.four {
+    background-color: #f0f0f0;
+    font-size: 3rem;
+    font-family: "Play", sans-serif;
+}
+
+/* Styling for .four .type */
+.four .type {
+    padding: 2rem 1rem;
+    width: auto;
+    margin: auto;
+}
+
+/* Styling for .four h3 */
+.four h3 {
+    width: 13ch;
+    border-right: 4px solid black;
+    margin: 2rem auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+/* Keyframe animation for typing effect */
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+/* Keyframe animation for blinking caret */
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+/* Dark Mode */
+[data-theme='dark'] {
+    background-color: #222;
+    color: #ffffff;
+}
+
+[data-theme='dark'] header {
+    background-color: #333;
+    color: #fff; /* Update text color for better readability */
+}
+
+[data-theme='dark'] nav ul li a {
+    color: #f5f5f5;
+}
+
+/* Update other sections for dark mode */
+[data-theme='dark'] .gdpr-info,
+[data-theme='dark'] .privacy-info,
+[data-theme='dark'] .our-games,
+[data-theme='dark'] .need-help {
+    background-color: #222; /* Update section background color */
+    color: #f5f5f5; /* Update section text color */
+}
+
+[data-theme='dark'] .gdpr-info h2,
+[data-theme='dark'] .privacy-info h2,
+[data-theme='dark'] .our-games h2,
+[data-theme='dark'] .need-help h2 {
+    color: #fff; /* Update section title color */
+}
+
+[data-theme='dark'] .our-games h3,
+[data-theme='dark'] .privacy-info h3 {
+    color: #fff; /* Update heading color */
+}
+
+[data-theme='dark'] .gdpr-info p,
+[data-theme='dark'] .privacy-info p,
+[data-theme='dark'] .our-games p,
+[data-theme='dark'] .need-help p {
+    color: #f5f5f5; /* Update paragraph text color */
+}
+
+/* Update button styles for dark mode */
+[data-theme='dark'] .cta-button,
+[data-theme='dark'] .game-button,
+[data-theme='dark'] .chatbot-section .button {
+    background-color: #333; /* Update button background color */
+    color: #fff; /* Update button text color */
+}
+
+[data-theme='dark'] .cta-button:hover,
+[data-theme='dark'] .game-button:hover,
+[data-theme='dark'] .chatbot-section .button:hover {
+    background-color: #555; /* Update button hover background color */
+}
+
+/* Update footer for dark mode */
+[data-theme='dark'] footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Theme toggle container */
+.theme-toggle-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999; /* Ensure it's above other content */
+}
+
+/* Theme toggle label */
+.theme-toggle {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #8b8b8b;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Slider */
+.theme-toggle::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #adadad;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+/* Slide to right when label is clicked */
+.theme-toggle-container input[type="checkbox"]:checked + .theme-toggle::after {
+    transform: translateX(20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

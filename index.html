@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Page</title>
+    <link rel="stylesheet" href="chatbotstyle.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Navigation Links -->
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Chatbot</a></li>
+                    <li><a href="hangman.html">Hangman Game</a></li>
+                    <li><a href="home.html">Homepage</a></li>
+                    <li><a href="index scrabble.html">Scrabble Game</a></li>
+                </ul>
+                <div class="theme-toggle-container">
+                    <label for="theme-toggle" class="theme-toggle"></label>
+                </div>  
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Learn GDPR and Privacy with a Chatbot</h2>
+            <p>This chatbot is a valuable resource for learning about GDPR and privacy regulations within this site. It's designed to provide information and answer questions about data protection laws in an accessible and interactive way.</p>
+            <p>By engaging with our chatbot, users can gain a better understanding of their rights under GDPR, learn how to protect their personal data online, and discover best practices for privacy management.</p>
+            <div class="cta">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Our GDPR and Privacy Chatbot</h2>
+            <p>This GDPR and privacy focused chatbot has one goal, and that is to promote awareness and understanding of GDPR and privacy issues. It's a user-friendly tool that aims to simplify complex concepts and empower individuals to take control of their data privacy.</p>
+            <p>Through informative conversations, this chatbot guides users through the essentials of GDPR compliance and privacy protection. Whether you're a business owner, a consumer, or simply curious about data privacy, our chatbot is here to help.</p>
+        </div>
+    </section>
+    
+
+    <section id="chatbot" class="section">
+        <div class="container">
+            <div class="chatbot-header">
+                <h2>Cyber Security Chatbot</h2>
+                <p>Welcome to our GDPR and privacy chatbot! This chatbot is designed to provide information and answer questions related to GDPR (General Data Protection Regulation) and privacy topics.</p>
+                <p>If you are unsure on what qwestions you want to ask you can ask qwestions like ... what are my rights under gdpr and what is data protection</p>
+                <p>There is a built-in quiz within this chatbot so you can learn more in a fun way.</p>
+                <p>To start the GDPR quiz, type "start the GDPR quiz" or "take quiz" and press enter. The chatbot will guide you through the quiz questions.</p>
+            </div>
+            <div class="chatbot-container">
+                <div id="message-section">
+                    <div class="message" id="bot"><span id="bot-response"></span></div>
+                </div>
+                <div id="input-section">
+                    <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+                    <button class="send" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="games" class="section">
+        <div class="container">
+            <h2>Games</h2>
+            <p>Check out our collection of fun and entertaining games!</p>
+            <div class="game-buttons">
+                <a href="hangman.html" class="hangman-button">Play Hangman</a>
+                <a href="index scrabble.html" class="scrabble-button">Play Scrabble</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; Richard Jameson 20027956.</p>
+        </div>
+    </footer>
+    
+    <!-- Include JavaScript file -->
+    <script src="accessibility.js"></script>
+    <!-- Include JavaScript file for chatbot functionality -->
+    <script src="chatbot.js"></script>
+</body>
+</html>
+
+
+
+
+
